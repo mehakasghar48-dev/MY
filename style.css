@@ -1,0 +1,800 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+body {
+    background-color: rgb(254, 255, 255);
+    color: #002343;
+    overflow-x: hidden;}
+/* ==========================================================================
+   NAVIGATION BAR 
+   ========================================================================== */
+.navbar-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #12131a;
+    border-bottom: 1px solid #1f2029;}
+.logo {
+    font-size: 24px; 
+    font-weight: 800; 
+    color: #66e6fd;
+    display: flex;
+    align-items: center;
+    gap: 8px; }
+.logo-icon {
+    font-size: 80px;}
+.nav-links a {
+    color: #94a3b8; 
+    margin: 0 15px;
+    font-size: 14px;
+    font-weight: 500; 
+    text-decoration: none;
+    transition: color 0.3s;}
+
+.nav-links a:hover,
+
+.nav-links a.active {
+    color: lightskyblue; }
+.nav-links a.active {
+    border-bottom: 2px solid #3b82f6; 
+    padding-bottom: 5px; }
+.arrow {
+    display: inline-block; 
+    transform: rotate(180deg);
+    font-size: 10px;
+    margin-left: 2px;}
+.btn-primary {
+    background-color: #3b82f6;
+    border-color: #3b82f6 ;
+    color: white;
+    text-decoration: none; 
+    padding: 12px 24px;
+    border-radius: 50px; 
+    font-size: 14px;
+    font-weight: 600; 
+    display: inline-flex; 
+    align-items: center; 
+    gap: 8px; 
+    transition: background 0.3s;}
+.btn-primary:hover {
+    background-color: #2563eb ;}
+/* ==========================================================================
+   HERO SECTION 
+   ========================================================================== */
+.hero {
+    min-height: 85vh; 
+    display: flex;
+    align-items: center; 
+    padding: 0 8%;
+    background:
+        linear-gradient(rgba(18, 19, 26, 0.95), rgba(18, 19, 26, 0.95)),
+        repeating-linear-gradient(
+            0deg,
+            #171923,
+            #171923 2px,
+            #0f1016 2px,
+            #0f1016);
+}
+.hero-container {
+    max-width: 800px;}
+.badge {
+    background-color: rgba(106, 157, 215, 0.7); 
+    border: 1px solid #334155; 
+    color: white; 
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 11px; 
+    font-weight: 700; 
+    letter-spacing: 0.5px;
+    margin-bottom: 30px;}
+.badge-dot {
+    width: 6px; 
+    height: 6px; 
+    background-color: white; 
+    border-radius: 50%; }
+.hero-title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+    color: white; }
+.highlight-text {
+    color: #3b82f6; 
+    text-shadow: 0 0 20px rgba(59, 130, 246, 0.4);}
+.hero-subtitle {
+    font-size: 18px; 
+    font-weight: 700;
+    color: white; 
+    margin-bottom: 15px;}
+.hero-description {
+    font-size: 14px; 
+    color: white;
+    line-height: 1.6; 
+    margin-bottom: 35px; }
+    
+    /* ==========================================================================
+  2ndPAGE - Video Show 
+   ========================================================================== */
+.video-card {
+    position: relative !important;
+    width: 90%;
+    max-width: 1000px;
+    height: 560px;
+    margin: 50px auto; 
+    border: 12px solid #3b82f6;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;}
+.video-card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100% ;
+    object-fit: cover;
+    z-index: 1;}
+.video-play-btn {
+    position: absolute ;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ; 
+    z-index: 10; 
+    width: 80px;
+    height: 80px;
+    background-color: #3b82f6; 
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease;}
+.play-icon {
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 20px solid white;
+    margin-left: 6px; }
+.text-section-container {
+    max-width: 1000px; 
+    margin: 60px auto; 
+    padding: 0 15px;}
+.content-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;}
+    body {
+    background-color: rgb(229, 242, 247);}
+.left-heading {
+    flex: 1;}
+.right-text {
+    flex: 1.2;}
+.content-box h2 {
+    font-size: 20px;
+    color: #002343; 
+    font-weight: 700;
+    line-height: 1.3;
+    border-left: 4px solid #3b82f6;
+    padding-left: 20px; 
+    margin: 0;}
+.content-box p {
+    font-size: 14px;
+    color: #64748b;
+    line-height: 1.6; 
+    text-align: left;
+    margin: 0;}
+.video-section-wrapper {
+    border-bottom: 4px solid #1a73e8;
+}
+/* ==========================================================================
+   3RD PAGE - SERVICES GRID 
+   ========================================================================== */
+#dme-services-addon.services-section {
+    background-color: #e9effb !important;
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+    width: 100% !important;
+}
+#dme-services-addon *, 
+#dme-services-addon p, 
+#dme-services-addon h2, 
+#dme-services-addon h4, 
+#dme-services-addon span, 
+#dme-services-addon a {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;}
+.dme-forced-header-row {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: flex-end !important;
+    gap: 40px !important;
+    width: 100% !important;
+    text-align: left !important;
+
+    padding-left: 60px !important;
+    padding-right: 60px !important;}
+.dme-header-text-left {
+    flex: 1 !important;
+    max-width: 80%!important;
+    font-size: 20px!important; }
+.dme-header-button-right {
+    flex-shrink: 0 !important;
+    padding-bottom: 4px;}
+#dme-services-addon .small-title {
+    letter-spacing: 0.06rem !important;
+    font-size: 0.825rem !important;
+    color: #3b82f6 !important;
+    font-weight: 600 !important;}
+#dme-services-addon .services-main-heading {
+    font-size: 2.35rem !important;
+    font-weight: 700 !important;
+    color: #0f172a !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.03rem !important;}
+#dme-services-addon .custom-lead {
+    color: #64748b !important;
+    font-size: 0.985rem !important;
+    line-height: 1.65 !important;
+    font-weight: 400 !important;}
+#dme-services-addon .view-all-btn {
+    background-color: #3b82f6 !important;
+    border: none !important;
+    font-size: 0.925rem !important;
+    white-space: nowrap !important;
+    padding: 0.75rem 1.65rem !important;
+    transition: background-color 0.2s ease;}
+
+#dme-services-addon .service-card {
+    border-radius: 14px !important;
+    background-color: white!important;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.015) !important;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;}
+
+#dme-services-addon .card-title-text {
+    font-size: 1.35rem !important;
+    font-weight: 700 !important;
+    color: #0f172a !important;
+    letter-spacing: -0.01rem !important;}
+
+#dme-services-addon .card-desc {
+    font-size: 0.935rem !important;
+    line-height: 1.55 !important;
+    color: #64748b !important;}
+
+#dme-services-addon .icon-box {
+    width: 40px;
+    height: 40px;
+    background-color: #f1f5f9 !important;
+    border-radius: 8px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;}
+
+#dme-services-addon .icon-box i {
+    font-size: 1.25rem !important;
+    color: #1e293b !important;}
+#dme-services-addon .learn-more-link {
+    color: #3b82f6 !important;
+    text-decoration: none !important;
+    font-size: 0.9rem !important;}
+
+#dme-services-addon .learn-more-link i {
+    font-size: 0.75rem;}
+#dme-services-addon .py-25 {
+    padding-top: 0.65rem !important;
+    padding-bottom: 0.65rem !important;}
+/* ==========================================================================
+   4TH PAGE -DATA AUDIT 
+   ========================================================================== */
+#dme-audit-section {
+    background-color: #f3f6fc !important; 
+    width: 100% !important;}
+
+#dme-audit-section *, 
+#dme-audit-section p, 
+#dme-audit-section h2, 
+#dme-audit-section span, 
+#dme-audit-section a {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;}
+
+#dme-audit-section .small-title {
+    letter-spacing: 0.06rem !important;
+    font-size: 0.825rem !important;
+    color: #3b82f6 !important;
+    font-weight: 600 !important;}
+
+#dme-audit-section .audit-main-heading {
+    font-size: 1.75rem !important;
+    font-weight: 700 !important;
+    color: #0f172a !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.03rem !important;}
+
+#dme-audit-section .audit-desc {
+    color: #64748b !important;
+    font-size: 0.985rem !important;
+    line-height: 1.65 !important;
+    font-weight: 400;}
+
+#dme-audit-section .audit-btn {
+    background-color: #3b82f6 !important;
+    border: none !important;
+    font-size: 0.925rem !important;
+    white-space: nowrap !important;
+    padding: 0.75rem 1.65rem !important;
+    transition: background-color 0.2s ease;}
+
+#dme-audit-section .audit-image-container {
+    border-radius: 24px !important;
+    overflow: hidden;
+    display: flex;}
+
+#dme-audit-section .audit-image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;}
+/* ==========================================================================
+   5TH PAGE -DATA MIGRATION 
+   ========================================================================== */
+
+#dme-journey-section {
+    background-color: #ffffff !important;
+    width: 100% !important;}
+#dme-journey-section *, 
+#dme-journey-section p, 
+#dme-journey-section h2, 
+#dme-journey-section span, 
+#dme-journey-section a {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;}
+
+#dme-journey-section .small-title {
+    letter-spacing: 0.06rem !important;
+    font-size: 0.825rem !important;
+    color: #3b82f6 !important;
+    font-weight: 600 !important;}
+
+#dme-journey-section .journey-main-heading {
+    font-size: 1.75rem !important;
+    font-weight: 700 !important;
+    color: #0f172a !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.03rem !important;}
+
+#dme-journey-section .journey-desc {
+    color: #64748b !important;
+    font-size: 0.985rem !important;
+    line-height: 1.65 !important;
+    font-weight: 400;}
+
+#dme-journey-section .journey-btn {
+    background-color: #3b82f6 !important;
+    border: none !important;
+    font-size: 0.925rem !important;
+    white-space: nowrap !important;
+    padding: 0.75rem 1.65rem !important;
+    transition: background-color 0.2s ease;}
+
+#dme-journey-section .journey-image-container {
+    border-radius: 24px !important;
+    overflow: hidden;
+    display: flex;}
+
+#dme-journey-section .journey-image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;}
+/* ==========================================================================
+   6TH PAGE -STATS COUNTER 
+   ========================================================================== */
+
+#dme-stats-section {
+    background-color: #eff6ff !important;
+    width: 100% !important;
+    border-bottom: 8px solid #3b82f6 !important;}
+#dme-stats-section *,
+#dme-stats-section h2,
+#dme-stats-section span {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;}
+
+#dme-stats-section .stat-number {
+    font-size: 3rem !important;
+    color: #0f172a !important;
+    letter-spacing: -0.05rem !important;
+    line-height: 1 !important;}
+
+#dme-stats-section .stat-label {
+    font-size: 0.775rem !important;
+    color: #758dae !important; 
+    letter-spacing: 0.05rem !important;
+    display: inline-block;}
+
+/* ==========================================================================
+   7TH PAGE -PROCESS TIMELINE 
+   ========================================================================== */
+
+#dme-process-section {
+    background-color: #ffffff !important;
+    width: 100% !important;}
+#dme-process-section *,
+#dme-process-section p,
+#dme-process-section h2,
+#dme-process-section h4,
+#dme-process-section span {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;}
+
+#dme-process-section .small-title {
+    letter-spacing: 0.06rem !important;
+    font-size: 0.825rem !important;
+    color: #3b82f6 !important;
+    font-weight: 700 !important;}
+
+#dme-process-section .process-main-heading {
+    font-size: 2.35rem !important;
+    font-weight: 700 !important;
+    color: #0f172a !important;
+    letter-spacing: -0.03rem !important;}
+
+#dme-process-section .process-lead {
+    color: #64748b !important;
+    font-size: 0.985rem !important;
+    line-height: 1.65 !important;
+    max-width: 600px;}
+
+#dme-process-section .timeline-wrapper {
+    margin-top: 4rem;}
+
+#dme-process-section .timeline-center-line {
+    position: absolute;
+    width: 2px;
+    background-color: #f1f5f9;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;}
+
+#dme-process-section .timeline-row {
+    position: relative;
+    margin-bottom: 5rem;}
+
+#dme-process-section .timeline-icon-node {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: auto;}
+
+#dme-process-section .node-box {
+    width: 46px;
+    height: 46px;
+    background-color: #3b82f6 !important; 
+    border-radius: 10px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+
+#dme-process-section .node-box i {
+    color: #ffffff !important;
+    font-size: 1.2rem;}
+#dme-process-section .timeline-card {
+    background-color: #f8fafc !important; 
+    padding: 1.75rem 2rem !important;
+    border-radius: 12px !important;
+    display: inline-block;
+    width: 85%;
+    max-width: 450px;}
+#dme-process-section .timeline-card h4 {
+    color: #0f172a !important;
+    font-size: 1.25rem !important;}
+#dme-process-section .card-desc {
+    color: #64748b !important;
+    font-size: 0.9rem !important;}
+#dme-process-section .step-left {
+    border-right: 5px solid #ff7a00 !important; 
+    margin-right: 45px !important;}
+#dme-process-section .step-right {
+    border-left: 5px solid #ff7a00 !important;
+    margin-left: 45px !important; }
+
+/* ==========================================================================
+   8TH PAGE - TESTIMONIALS (stars)
+   ========================================================================== */
+
+#dme-testimonials-section {
+    background-color: #f8fafc !important; }
+#dme-testimonials-section *,
+#dme-testimonials-section p,
+#dme-testimonials-section h2,
+#dme-testimonials-section h5,
+#dme-testimonials-section span {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;}
+
+#dme-testimonials-section .testimonial-main-heading {
+    font-size: 2.35rem !important;
+    font-weight: 700 !important;
+    color: #0f172a !important;
+    letter-spacing: -0.03rem !important;}
+
+#dme-testimonials-section .testimonial-lead {
+    color: #64748b !important;
+    font-size: 0.985rem !important;
+    line-height: 1.65 !important;}
+#dme-testimonials-section .testimonial-card {
+    background-color: #edf2f7 !important;
+    border-radius: 16px !important;
+    border: 1px solid #e2e8f0 !important;
+    padding: 2.25rem 2rem 0 2rem !important; 
+    overflow: hidden;}
+
+#dme-testimonials-section .star-rating i {
+    color: #ffb100 !important;
+    font-size: 1.15rem !important;
+    margin-right: 2px;
+}
+
+#dme-testimonials-section .review-text {
+    color: #0f172a !important;
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+    font-weight: 500 !important;
+    text-align: left;}
+
+#dme-testimonials-section .card-bottom-author {
+    background-color: #edf2f7 !important; 
+    border-top: 1px solid #edf2f7 !important;
+    padding: 1.25rem 2rem !important;
+    margin-left: -2rem !important;  
+    margin-right: -2rem !important; 
+    text-align: left;}
+
+#dme-testimonials-section .author-name {
+    color: #3b82f6 !important;
+    font-size: 0.95rem !important;}
+
+#dme-testimonials-section .author-role {
+    color: #64748b !important;
+    font-size: 0.775rem !important;}
+
+#dme-testimonials-section .controls-wrapper {
+    max-width: 96%;
+    margin-left: auto;
+    margin-right: auto;}
+
+#dme-testimonials-section .ctrl-btn {
+    width: 44px;
+    height: 44px;
+    background-color: #f2f1f3 !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 50% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3b82f6 !important;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+#dme-testimonials-section .slider-dots {
+    align-items: center;}
+
+#dme-testimonials-section .dot {
+    width: 8px;
+    height: 8px;
+    background-color: #c6daf3 !important;
+    border-radius: 50% !important;
+    display: inline-block;
+    transition: all 0.2s ease;}
+
+#dme-testimonials-section .dot.active {
+    width: 24px !important; 
+    border-radius: 10px !important;
+    background-color: #3b82f6 !important;
+}
+/* ==========================================================================
+   9TH PAGE -CUSTOMERS LOGO 
+   ========================================================================== */
+
+#dme-customers-section {
+    background-color: #e5f1fd !important;
+    width: 100% !important;
+    border-bottom: 8px solid #3b82f6 !important;}
+
+#dme-customers-section *,
+#dme-customers-section h3 {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;}
+
+#dme-customers-section .logo-display-row {
+    display: flex !important;
+    align-items: center !important;   
+    justify-content: center !important;   
+    flex-wrap: wrap !important;}
+
+#dme-customers-section .customer-logo-wrapper {
+    display: flex !important;
+    align-items: center !important;    
+    justify-content: center !important;  
+    padding: 0 1rem;
+    height: 60px;                    
+    width: 100%;}
+
+#dme-customers-section .customer-logo-img {
+    max-height: 65px !important;       
+    max-width: 85% !important;          
+    object-fit: contain !important;
+    margin: 0 auto !important;}
+/* ==========================================================================
+   10TH PAGE -CONTACT & CTA
+   ========================================================================== */
+
+#dme-contact-section {
+    background-color: #f3f6fc !important; 
+    width: 100% !important;}
+
+#dme-contact-section *,
+#dme-contact-section p,
+#dme-contact-section h2,
+#dme-contact-section h3,
+#dme-contact-section h5,
+#dme-contact-section label,
+#dme-contact-section input,
+#dme-contact-section textarea {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;}
+
+#dme-contact-section .contact-main-heading {
+    font-size: 2.35rem !important;
+    font-weight: 700 !important;
+    color: #0f172a !important;
+    line-height: 1.25 !important;
+    letter-spacing: -0.04rem !important;}
+
+#dme-contact-section .contact-icon-box {
+    width: 42px;
+    height: 42px;
+    background-color: #ffffff !important;
+    border-radius: 10px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e2e8f0 !important;
+    flex-shrink: 0;}
+
+#dme-contact-section .contact-icon-box i {
+    color: #3b82f6 !important; 
+    font-size: 1.1rem !important;}
+
+#dme-contact-section .info-title {
+    font-size: 0.95rem !important;
+    color: #3b82f6 !important;}
+
+#dme-contact-section .info-text {
+    font-size: 0.925rem !important;
+    color: #64748b !important;}
+
+#dme-contact-section .contact-form-card {
+    background-color: #ffffff !important;
+    border-radius: 20px !important;
+    border: 1px solid #edf2f7 !important;}
+
+#dme-contact-section .contact-form-card label {
+    font-size: 0.85rem !important;
+    color: #0f172a !important;
+    margin-bottom: 0.4rem !important;}
+
+#dme-contact-section .custom-input,
+#dme-contact-section .custom-textarea {
+    background-color: #f1f5f9 !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 8px !important;
+    padding: 0.65rem 1rem !important;
+    font-size: 0.9rem !important;
+    color: #0f172a !important;
+}
+#dme-contact-section .custom-input::placeholder,
+#dme-contact-section .custom-textarea::placeholder {
+    color: #94a3b8 !important;}
+#dme-contact-section .custom-input:focus,
+#dme-contact-section .custom-textarea:focus {
+    background-color: #eee4f3 !important;
+    border-color: #3b82f6 !important;
+    box-shadow: none !important;}
+
+#dme-contact-section .form-submit-btn {
+    background-color: #3b82f6 !important;
+    border: none !important;
+    padding: 0.75rem 1.75rem !important;
+    font-size: 0.9rem !important;}
+
+#dme-contact-section .cta-banner-row {
+    background-color: #e9f1ff !important; 
+    padding: 2.80rem!important; 
+    border-radius: 10px !important; 
+    margin-top: 3rem !important; }
+
+#dme-contact-section .cta-heading-wrapper {
+    border-left: 4px solid #3b82f6 !important; }
+
+#dme-contact-section .cta-main-text {
+    font-size: 1.5rem !important;
+    color: #0f172a !important;
+    line-height: 1.3 !important;
+    letter-spacing: -0.02rem !important;}
+
+#dme-contact-section .banner-cta-btn {
+    background-color: #3b82f6 !important;
+    border: none !important;
+    padding: 0.8rem 1.85rem !important;
+    font-size: 0.925rem !important;
+    white-space: nowrap !important;}
+/* ==========================================================================
+   11TH PAGE -FOOTER
+   ========================================================================== */
+#dme-site-footer {
+    background-color: #f3f6fc !important; 
+    width: 100% !important;}
+
+#dme-site-footer *,
+#dme-site-footer p,
+#dme-site-footer a,
+#dme-site-footer span {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;}
+
+#dme-site-footer .footer-logo-text {
+    font-size: 1.85rem !important;
+    color: #0099cc !important; 
+    letter-spacing: 0.02rem !important;}
+
+#dme-site-footer .footer-desc {
+    color: #475569 !important; 
+    font-size: 0.935rem !important;
+    line-height: 1.55 !important;
+    max-width: 520px;
+}
+#dme-site-footer .footer-links-nav a {
+    color: #1e293b !important;
+    font-size: 0.925rem !important;
+    transition: color 0.15s ease-in-out;}
+
+#dme-site-footer .footer-links-nav a:hover {
+    color: #0099cc !important;}
+
+#dme-site-footer .footer-divider {
+    border-color: #cbd5e1 !important;
+    opacity: 0.5;}
+
+#dme-site-footer .copyright-text {
+    color: #64748b !important;
+    font-size: 0.85rem !important;
+    font-weight: 500 !important;
+}
+#dme-site-footer .social-circle-icon {
+    width: 34px;
+    height: 34px;
+    background-color: #e2e8f0 !important;
+    color: #3b82f6 !important;
+    border-radius: 50% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem !important;
+    transition: all 0.2s ease;
+}
+#dme-site-footer .social-circle-icon:hover {
+    background-color: #3b82f6 !important;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+}
