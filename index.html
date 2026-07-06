@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DME - Data Migration Experts</title>
-    
+     <script src="script.js"defer></script>
     <!-- Bootstrap 5 CSS -->
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     
@@ -540,3 +540,54 @@ We understand the nuances, complexity, and uniqueness of challenges of all the s
 
     </div>
 </footer>
+
+<!-- ==========================================================================
+     12TH PAGE -list of JS files
+     ========================================================================== -->
+    <section id="dme-crud-section" class="pink-crud-wrapper">
+    <div class="cute-card-container">
+        <h2 class="section-sparkle-title">Add New Entry</h2>
+        <form id="dme-entry-form">
+            <div class="cute-grid-form">
+                <div class="form-group-cute">
+                    <label for="entry-name">👤 Enter Name</label>
+                    <input type="text" id="entry-name" class="input-cute" required>
+                </div>
+                <div class="form-group-cute">
+                    <label for="entry-email">📧 Enter Email</label>
+                    <input type="email" id="entry-email" class="input-cute" required>
+                </div>
+                <div class="form-group-cute">
+                    <label for="entry-phone">📱 Enter Phone</label>
+                    <input type="tel" id="entry-phone" class="input-cute" required>
+                </div>
+                <div class="form-group-cute">
+                    <label for="entry-note">📝 Enter Note</label>
+                    <input type="text" id="entry-note" class="input-cute">
+                </div>
+            </div>
+            <div class="cute-action-row">
+                <button type="submit" class="btn-submit-pink" id="save-btn">Save Entry</button>
+                <button type="button" class="btn-clear-purple" id="clear-btn">Clear</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="cute-card-container">
+        <h2 class="section-sparkle-title">Entered Entries</h2>
+        <div class="table-responsive-wrapper">
+            <table class="cute-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Note</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="entries-table-body"></tbody>
+            </table>
+        </div>
+    </div>
+</section>
